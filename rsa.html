@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Crext</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+  <style>
+    .dragbox {
+      width: 400px;
+      height: 150px;
+      margin: auto;
+      text-align: center;
+      background-color: #ffffff;
+      border: 2px solid #01293c;
+      animation: progress-bar-stripes 1s linear infinite;
+    }
+    .progress-bar-striped {
+      background-image: linear-gradient(45deg,
+          hsla(23, 100%, 50%, 0.15) 25%,
+          transparent 0,
+          transparent 50%,
+          hsla(0, 0%, 100%, 0.15) 0,
+          hsla(0, 0%, 100%, 0.15) 75%,
+          transparent 0,
+          transparent);
+      background-size: 1rem 1rem;
+    }
+    .dragbox-over {
+      background-color: #4cb9f9;
+    }
+    .text-vertical-center {
+      position: relative;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+       
+</style>
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="home.html" class="navbar-brand p-0">
+                    <h1 class="m-0">Crext</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="home.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Algoritma</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="aes.html" class="dropdown-item">AES</a>
+                                <a href="rsa.html" class="dropdown-item">RSA</a>
+                            </div>
+                        </div>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+            </nav>
+
+            <div class="container-xxl bg-primary page-header">
+                <div class="container text-center">
+                    <h1 class="text-white animated zoomIn mb-3">RSA</h1>
+                    <nav aria-label="breadcrumb">
+                       
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
+                        <img class="img-fluid" src="assets/img/RSA.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2 class="mb-4">RSA (Rivest—Shamir—Adleman)</h2>
+                        <p class="mb-4">SA adalah algoritma enkripsi yang digunakan untuk mengenkripsi data dan mendekripsinya dengan kunci rahasia. 
+                          RSA merupakan salah satu algoritma enkripsi asimetris yang paling umum digunakan, dimana kunci enkripsi yang digunakan dan kunci dekripsi berbeda.
+                          RSA dikembangkan pada tahun 1978 oleh Ron Rivest, Adi Shamir dan Leonard Adleman, yang memberi nama algoritma tersebut. 
+                          RSA menggunakan prinsip enkripsi berdasarkan teori prima, dimana kunci enkripsi yang digunakan terdiri dari dua bilangan prima besar. 
+                          Algoritma ini sering digunakan dalam aplikasi keamanan jaringan, termasuk sistem pembayaran online dan komunikasi elektronik.
+                        </p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-12 d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-user-tie text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>Enkripsi</h6>
+                                    <span>Proses perubahan plaintext (kata yang bisa dibaca) menjadi ciphertext (kata yang tidak bisa dibaca)</span>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-chart-line text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>Dekripsi</h6>
+                                    <span>Proses perubahan ciphertext menjadi sebuah plaintext</span>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                        onClick="javascript:switchdiv('encrypt');">
+                            Simulasi RSA
+                          </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                          <div class="card card-body">
+                            <body class="container">
+                                <div class="row p-5 border mt-4">
+                                  <h2 class="col-12 text-center pb-3">Simulasi  RSA</h2>
+                                  <label>Kunci Publik</label>
+                                  <textarea id="pub" rows="5" class="col-12" readonly></textarea>
+                                  <label>Kunci Privat</label>
+                                  <textarea id="pri" rows="5" class="col-12" readonly></textarea>
+                                  <div class="col-12 text-center mt-3 mb-3">
+                                    <button class="btn btn-secondary" onclick="getRsaKeys()">
+                                      Refresh Kunci
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="row p-5 border mt-4">
+                                  <h2 class="col-12 text-center pb-5">
+                                    Plaintext Enkripsi dan Dekripsi RSA
+                                  </h2>
+                                  <label>Plaintext (Maksimal 117 characters)</label>
+                                  <textarea class="col-12" rows="1" id="plainText"></textarea>
+                                  <div class="col-12 text-center mt-3 mb-3">
+                                    <button class="btn btn-info" onclick="encryptRSA()">
+                                      Enkripsi
+                                    </button>
+                                  </div>
+                                  <label>Enkripsi Teks (Maksimal 172 characters)</label>
+                                  <textarea class="col-12" rows="3" id="encryptedText"></textarea>
+                                  <div class="col-12 text-center mt-3">
+                                    <button class="btn btn-warning" onclick="decryptRSA()">
+                                      Dekripsi
+                                    </button>
+                                  </div>
+                                  <label>Dekripsi Teks</label>
+                                  <textarea class="col-12" rows="1" id="decryptedText"></textarea>
+                                </div>
+                                <div class="row p-5 border mt-4">
+                                  <h2 class="col-12 text-center pb-3">
+                                    Enkripsi dan Dekripsi File RSA
+                                  </h2>
+                                  <span class="col-12 text-center pb-3 text-danger">Drag and drop file pada kotak yang sudah disediakan. (Disarankan untuk menggunakan
+                                    file dengan size tidak lebih dari 1 MB)</span>
+                                  <div class="dragbox mt-2 text-center" id="encryptionDropBox">
+                                    <p class="text-vertical-center">
+                                      <strong>Drag File Disini Untuk Enkripsi</strong>
+                                    </p>
+                                  </div>
+                                  <div class="dragbox mt-2 text-center" id="decryptionDropBox">
+                                    <p class="text-vertical-center">
+                                      <strong>Drag File Enkripsi Disini Untuk Dekripsi</strong>
+                                    </p>
+                                  </div>
+                                </div>
+                               
+                              </body>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+                    
+        <!-- Features End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.0.0-rc.1/jsencrypt.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+  
+<script>
+  var publicKey = "";
+  var privateKey = "";
+
+  window.onload = () => {
+    getRsaKeys();
+  };
+
+  $("#encryptionDropBox").on("dragover", function (evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    $(this).addClass("dragbox-over");
+  });
+  $("#encryptionDropBox").on("dragleave", function (evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    $(this).removeClass("dragbox-over");
+  });
+  $("#encryptionDropBox").on("drop", function (evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    $(this).addClass("progress-bar-striped");
+    var file = evt.originalEvent.dataTransfer.files[0];
+    setTimeout(async () => {
+      await fileEncryptRSA(file);
+      $(this).removeClass("progress-bar-striped");
+      $(this).removeClass("dragbox-over");
+    }, 1000);
+  });
+  $("#decryptionDropBox").on("dragover", function (evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    $(this).addClass("dragbox-over");
+  });
+  $("#decryptionDropBox").on("dragleave", function (evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    $(this).removeClass("dragbox-over");
+  });
+  $("#decryptionDropBox").on("drop", function (evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    $(this).addClass("progress-bar-striped");
+    var file = evt.originalEvent.dataTransfer.files[0];
+    setTimeout(async () => {
+      await fileDecryptRSA(file);
+      $(this).removeClass("progress-bar-striped");
+      $(this).removeClass("dragbox-over");
+    }, 1000);
+  });
+  //plainText encryption (max = 117)
+  function encryptRSA(data) {
+    if (data === undefined) {
+      data = $("#plainText").val();
+    }
+    var encrypt = new JSEncrypt();
+    encrypt.setPublicKey(publicKey);
+    var result =
+      encrypt.encrypt(data) == null ? "Failed" : encrypt.encrypt(data);
+    document.getElementById("encryptedText").value = result;
+    return result;
+  }
+  //plainText decryption (max = 172)
+  function decryptRSA(data) {
+    if (data === undefined) {
+      data = $("#encryptedText").val();
+    }
+    var decrypt = new JSEncrypt();
+    decrypt.setPrivateKey(privateKey);
+    var result =
+      decrypt.decrypt(data) == null ? "Failed" : decrypt.decrypt(data);
+    document.getElementById("decryptedText").value = result;
+    return result;
+  }
+
+  //read file in 10 based which convert from 8 bits binary, then encrypt the bytecode
+  function fileEncryptRSA(file) {
+    var filename = file.name;
+    var reader = new FileReader();
+    reader.readAsArrayBuffer(file);
+    reader.onload = function (evt) {
+      if (evt.target.readyState == FileReader.DONE) {
+        var arrayBuffer = evt.target.result;
+        var arrayString = new Uint8Array(arrayBuffer).toString();
+        var encrypt = new JSEncrypt();
+        encrypt.setPublicKey(document.getElementById("pub").value);
+        var maxLength = 117;
+        var count =
+          Math.ceil(arrayString.length / maxLength) > 0 ?
+          Math.ceil(arrayString.length / maxLength) :
+          1;
+        var encryptedData = "";
+        for (let i = 0; i < count; i++) {
+          var temp = "";
+          for (
+            let ii = i * maxLength; ii < (i + 1) * maxLength && ii < arrayString.length; ii++
+          ) {
+            temp += arrayString[ii];
+          }
+          encryptedData += encrypt.encrypt(temp);
+        }
+        downFlie(encryptedData, "encrypted." + filename + ".sc.encrypt");
+      }
+    };
+  }
+
+  //read file in 10 based which convert from 8 bits binary, then decrypt the encrypted text
+  function fileDecryptRSA(file) {
+    var filename = file.name;
+    var reader = new FileReader();
+    reader.readAsArrayBuffer(file);
+    reader.onload = function (evt) {
+      if (evt.target.readyState == FileReader.DONE) {
+        var arrayBuffer = evt.target.result;
+        var array = new Uint8Array(arrayBuffer);
+        var decrypt = new JSEncrypt();
+        decrypt.setPrivateKey(document.getElementById("pri").value);
+        var maxBufferLength = 172;
+        var count =
+          Math.ceil(array.length / maxBufferLength) > 0 ?
+          Math.ceil(array.length / maxBufferLength) :
+          1;
+        var decryptedBin = "";
+        for (var i = 0; i < count; i++) {
+          var temp = "";
+          for (
+            var ii = i * maxBufferLength; ii < (i + 1) * maxBufferLength && ii < array.length; ii++
+          ) {
+            temp += String.fromCharCode(array[ii]);
+          }
+          decryptedBin += decrypt.decrypt(temp); //10 base numbers for each byte
+        }
+
+        decryptedBin = decryptedBin.split(",");
+        var decryptedData = [];
+        decryptedBin.forEach((element) => {
+          decryptedData.push(parseInt(element));
+        });
+        decryptedData = new Uint8Array(decryptedData);
+        downFlie(
+          decryptedData.buffer,
+          "decrypted." +
+          filename.replace("encrypted.", "").replace(".sc.encrypt", "")
+        );
+      }
+    };
+  }
+
+  //download file
+  function downFlie(buffer, filename) {
+    var elementA = document.createElement("a");
+    elementA.download = filename;
+    elementA.style.display = "none";
+    try {
+      var file = new Blob([buffer]);
+      elementA.href = URL.createObjectURL(file);
+      document.body.appendChild(elementA);
+      elementA.click();
+      document.body.removeChild(elementA);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+</script>
+<script>
+    function getRsaKeys(func) {
+      window.crypto.subtle
+        .generateKey({
+            name: "RSA-OAEP",
+            modulusLength: 1024, //can be 1024, 2048, or 4096
+            publicExponent: new Uint8Array([0x01, 0x00, 0x01]),
+            hash: {
+              name: "SHA-512"
+            }, //can be "SHA-1", "SHA-256", "SHA-384", or "SHA-512"
+          },
+          true, //whether the key is extractable (i.e. can be used in exportKey)
+          ["encrypt", "decrypt"] //must be ["encrypt", "decrypt"] or ["wrapKey", "unwrapKey"]
+        )
+        .then(function (key) {
+          window.crypto.subtle
+            .exportKey("pkcs8", key.privateKey)
+            .then(function (priKeyBuffer) {
+              window.crypto.subtle
+                .exportKey("spki", key.publicKey)
+                .then(function (pubKeyBuffer) {
+                  privateKey = RSA2text(priKeyBuffer, 1);
+                  publicKey = RSA2text(pubKeyBuffer);
+                  document.getElementById("pub").value = publicKey;
+                  document.getElementById("pri").value = privateKey;
+                })
+                .catch(function (err) {
+                  console.log(err);
+                });
+            })
+            .catch(function (err) {
+              console.log(err);
+            });
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
+    }
+  
+    function RSA2text(buffer, isPrivate = 0) {
+      var binary = "";
+      var bytes = new Uint8Array(buffer);
+      var len = bytes.byteLength;
+      for (var i = 0; i < len; i++) {
+        binary += String.fromCharCode(bytes[i]);
+      }
+      var base64 = window.btoa(binary);
+      var text =
+        "-----BEGIN " + (isPrivate ? "PRIVATE" : "PUBLIC") + " KEY-----\n";
+      text += base64
+        .replace(/[^\x00-\xff]/g, "$&\x01")
+        .replace(/.{64}\x01?/g, "$&\n");
+      text += "\n-----END " + (isPrivate ? "PRIVATE" : "PUBLIC") + " KEY-----";
+      return text;
+    }
+  </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Crext</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    p{
+        text-align: justify;
+    } 
+   		a:hover {
+			cursor:pointer;
+			color: red;
+		}
+
+		.black10pointcourier {
+	  		font-family: 'courier'; 
+			color: black;
+			font-size: 10pt;		
+		}
+
+		.container {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		.dropzone {
+			border: 5px solid rgb(0, 0, 0);
+			width: 25%;
+			padding: 2% 2% 5% 2%;
+			text-align: center;
+			margin: 5px 0 5px 0;
+		}
+
+		.divTablefullwidth{
+			display: table;
+			width: 100%;
+		}
+
+		.divTable{
+			display: table;
+		}
+
+		.divTableRow {
+			display: table-row;
+		}
+		.divTableCell {
+			display: table-cell;
+			padding: 3px 3px;
+		}
+		.divTableBody {
+			display: table-row-group;
+		}
+
+		.greenspan {
+			color: green;	  
+		}
+
+		.redspan {
+			color: red;	  
+		}
+</style>
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="home.html" class="navbar-brand p-0">
+                    <h1 class="m-0">Crext</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="home.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Algoritma</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="aes.html" class="dropdown-item">AES</a>
+                                <a href="rsa.html" class="dropdown-item">RSA</a>
+                            </div>
+                        </div>
+            </nav>
+
+            <div class="container-xxl bg-primary page-header">
+                <div class="container text-center">
+                    <h1 class="text-white animated zoomIn mb-3">AES</h1>
+                    <nav aria-label="breadcrumb">
+                        <!-- <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="home.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">AES</li>
+                        </ol> -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
+                        <img class="img-fluid" src="assets/img/aes.png" height="200">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2 class="mb-4">AES (Advanced Encryption Standard)</h2>
+                        <p class="mb-4" text>AES (Advanced Encryption Standard) adalah algoritma enkripsi untuk mengenkripsi dan mendekripsi 
+                            data menggunakan kunci rahasia. Dikembangkan oleh US National Institute of Standards and Technology (NIST) pada 
+                            tahun 2001, AES telah menjadi standar enkripsi yang paling banyak digunakan di dunia.
+                        </p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-12 d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-user-tie text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>Enkripsi</h6>
+                                    <span>Proses diubahnya plaintext (kata yang dapat dibaca) menjadi ciphertext (kata yang tidak dapat dibaca)</span>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-chart-line text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>Dekripsi</h6>
+                                    <span>Proses diubahnya ciphertext menjadi  plaintext</span>
+                                </div>
+                            </div>
+                       
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- About End -->
+
+
+        <!-- Features Start -->
+                       
+                  
+        <div class="container-xxl py-2">
+            <div class="container">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                        onClick="javascript:switchdiv('encrypt');">
+                            Simulasi AES
+                          </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                          <div class="card card-body">
+                            <div class=container>
+                                <div class="divTablefullwidth">
+                                    <div class="divTableBody">
+                                        <div class="divTableRow">
+                                            <div class="divTableCell" style="float: left;">
+                                               
+                                            </div>
+                                            <div class="divTableCell" style="float: left;">
+                                                <h1>
+                                                <button type="button" class="btn btn-secondary" id="btnDivEncrypt" onClick="javascript:switchdiv('encrypt');">Enkripsi File</button>
+                                                <button type="button" class="btn btn-danger" id="btnDivDecrypt" onClick="javascript:switchdiv('decrypt');">Dekripsi File</button>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                            <div class=container>
+                                <hr>
+                            </div>
+                    
+                            <div class="container" id=divEncryptfile>
+                                <h2>Enkripsi File</h2>
+                                <p>Lakukan enkripsi dengan menginputkan password sebegai kunci.</p>
+                    
+                                <div class="divTable">
+                                    <div class="divTableBody">
+                                        <div class="divTableRow">
+                                            <div class="divTableCell">Password</div>
+                                            <div class="divTableCell"><input id=txtEncpassphrase type=password size=30 onkeyup=javascript:encvalidate(); value=''></div>
+                                            <div class="divTableCell">(minimal 8 karakter)</div>
+                                        </div>
+                                        <div class="divTableRow">
+                                            <div class="divTableCell">Password (retype)</div>
+                                            <div class="divTableCell"><input id=txtEncpassphraseretype type=password size=30 onkeyup=javascript:encvalidate(); value=''></div>
+                                            <div class="divTableCell"><span class=greenspan id=spnCheckretype></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <p> </p>
+                    
+                                <div>
+                                    <div class=dropzone id="encdropzone" ondrop="drop_handler(event);" ondragover="dragover_handler(event);" ondragend="dragend_handler(event);">
+                                        <p>Drag File Disini Untuk Enkripsi<a onclick=javascript:encfileElem.click();></a>.</p>
+                                        <p><span id=spnencfilename></span></p>
+                                    </div>
+                                    <input type="file" id="encfileElem" style="display:none" onchange="selectfile(this.files)">
+                                </div>
+                    
+                                <p> </p>
+                    
+                                <div class="divTable">
+                                    <div class="divTableBody">
+                                        <div class="divTableRow">
+                                            <div class="divTableCell"><button type="button" class="btn btn-success" id=btnEncrypt onclick=javascript:encryptfile(); disabled>Encrypt File</button></div>
+                                            <div class="divTableCell"><span id=spnEncstatus></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <p> </p>
+                    
+                                <div>
+                                    <a id=aEncsavefile hidden><button type="button" class="btn btn-info">Save Encrypted File</button></a>
+                                </div>
+                            
+                                <p> </p>
+                            </div>
+                    
+                            <div class="container" id=divDecryptfile>
+                                <h2>Dekripsi File</h2>
+                                <p>Lakukan dekripsi file dengan menginputkan password yang sama ketika enkripsi file.</p>
+                    
+                                <div class="divTable">
+                                    <div class="divTableBody">
+                                        <div class="divTableRow">
+                                            <div class="divTableCell">Password</div>
+                                            <div class="divTableCell"><input id=txtDecpassphrase type=password size=30 onkeyup=javascript:decvalidate(); value=''></div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <p> </p>
+                    
+                                <div>
+                                        <div class=dropzone  id="decdropzone" ondrop="drop_handler(event);" ondragover="dragover_handler(event);" ondragend="dragend_handler(event);">
+                                            <p>Drag File Enkripsi Disini Untuk Dekripsi<a role=button onclick=javascript:decfileElem.click();></a>.</p>
+                                            <p><span id=spndecfilename></span></p>
+                                        </div>
+                                        <input type="file" id="decfileElem" style="display:none" onchange="selectfile(this.files)">
+                                </div>
+                    
+                                <p> </p>
+                    
+                                <div class="divTable">
+                                    <div class="divTableBody">
+                                        <div class="divTableRow">
+                                            <div class="divTableCell"><button type="button" class="btn btn-success" id=btnDecrypt onclick=javascript:decryptfile(); disabled>Decrypt File</button></div>
+                                            <div class="divTableCell"><span id=spnDecstatus></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <p> </p>
+                    
+                                <div>
+                                    <a id=aDecsavefile hidden><button type="button" class="btn btn-info">Save Decrypted File</button></a>
+                                </div>
+                            
+                                <p> </p>
+                            </div>
+                    
+                           
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+         
+        <!-- Features End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        var mode=null;
+        var objFile=null;
+        switchdiv('encrypt');
+    
+        function switchdiv(t) {
+            if(t=='encrypt') {
+                divEncryptfile.style.display='block';
+                divDecryptfile.style.display='none';
+                btnDivEncrypt.disabled=true;
+                btnDivDecrypt.disabled=false;
+                mode='encrypt';
+            } else if(t=='decrypt') {
+                divEncryptfile.style.display='none';
+                divDecryptfile.style.display='block';
+                btnDivEncrypt.disabled=false;
+                btnDivDecrypt.disabled=true;
+                mode='decrypt';
+            }
+        }
+    
+        function encvalidate() {
+            if(txtEncpassphrase.value.length>=8 && txtEncpassphrase.value==txtEncpassphraseretype.value) { 
+              spnCheckretype.classList.add("greenspan");
+              spnCheckretype.classList.remove("redspan");
+              spnCheckretype.innerHTML='&#10004;';
+            } else { 
+              spnCheckretype.classList.remove("greenspan");
+              spnCheckretype.classList.add("redspan");
+                spnCheckretype.innerHTML='&#10006;';
+            }
+    
+            if( txtEncpassphrase.value.length>=8 && txtEncpassphrase.value==txtEncpassphraseretype.value && objFile ) { btnEncrypt.disabled=false; } else { btnEncrypt.disabled=true; }
+        }
+    
+        function decvalidate() {
+            if( txtDecpassphrase.value.length>0 && objFile ) { btnDecrypt.disabled=false; } else { btnDecrypt.disabled=true; }
+        }
+    
+        //drag and drop functions:
+        //https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/File_drag_and_drop
+        function drop_handler(ev) {
+            console.log("Drop");
+            ev.preventDefault();
+            // If dropped items aren't files, reject them
+            var dt = ev.dataTransfer;
+            if (dt.items) {
+                // Use DataTransferItemList interface to access the file(s)
+                for (var i=0; i < dt.items.length; i++) {
+                    if (dt.items[i].kind == "file") {
+                        var f = dt.items[i].getAsFile();
+                        console.log("... file[" + i + "].name = " + f.name);
+                        objFile=f;
+                    }
+                }
+            } else {
+                // Use DataTransfer interface to access the file(s)
+                for (var i=0; i < dt.files.length; i++) {
+                    console.log("... file[" + i + "].name = " + dt.files[i].name);
+                }  
+                objFile=file[0];
+            }		 
+            displayfile()
+            if(mode=='encrypt') { encvalidate(); } else if(mode=='decrypt') { decvalidate(); }
+        }
+    
+        function dragover_handler(ev) {
+            console.log("dragOver");
+            // Prevent default select and drag behavior
+            ev.preventDefault();
+        }
+    
+        function dragend_handler(ev) {
+            console.log("dragEnd");
+            // Remove all of the drag data
+            var dt = ev.dataTransfer;
+            if (dt.items) {
+                // Use DataTransferItemList interface to remove the drag data
+                for (var i = 0; i < dt.items.length; i++) {
+                    dt.items.remove(i);
+                }
+            } else {
+                // Use DataTransfer interface to remove the drag data
+                ev.dataTransfer.clearData();
+            }
+        }
+    
+        function selectfile(Files) {
+            objFile=Files[0];
+            displayfile()
+            if(mode=='encrypt') { encvalidate(); } else if(mode=='decrypt') { decvalidate(); }
+        }
+    
+        function displayfile() {
+            var s;
+            var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+            var bytes=objFile.size;
+            var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+            if(i==0) { s=bytes + ' ' + sizes[i]; } else { s=(bytes / Math.pow(1024, i)).toFixed(2) + ' ' + sizes[i]; }
+    
+            if(mode=='encrypt') { 
+                spnencfilename.textContent=objFile.name + ' (' + s + ')'; 
+            } else if(mode=='decrypt') {  
+                spndecfilename.textContent=objFile.name + ' (' + s + ')'; 
+            } 
+        }
+    
+        function readfile(file){
+            return new Promise((resolve, reject) => {
+                var fr = new FileReader();  
+                fr.onload = () => {
+                    resolve(fr.result )
+                };
+                fr.readAsArrayBuffer(file);
+            });
+        }
+    
+        async function encryptfile() {
+            btnEncrypt.disabled=true;
+    
+            var plaintextbytes=await readfile(objFile)
+            .catch(function(err){
+                console.error(err);
+            });	
+            var plaintextbytes=new Uint8Array(plaintextbytes);
+    
+            var pbkdf2iterations=10000;
+            var passphrasebytes=new TextEncoder("utf-8").encode(txtEncpassphrase.value);
+            var pbkdf2salt=window.crypto.getRandomValues(new Uint8Array(8));
+    
+            var passphrasekey=await window.crypto.subtle.importKey('raw', passphrasebytes, {name: 'PBKDF2'}, false, ['deriveBits'])
+            .catch(function(err){
+                console.error(err);
+            });
+            console.log('passphrasekey imported');
+    
+            var pbkdf2bytes=await window.crypto.subtle.deriveBits({"name": 'PBKDF2', "salt": pbkdf2salt, "iterations": pbkdf2iterations, "hash": 'SHA-256'}, passphrasekey, 384)		
+            .catch(function(err){
+                console.error(err);
+            });
+            console.log('pbkdf2bytes derived');
+            pbkdf2bytes=new Uint8Array(pbkdf2bytes);
+    
+            keybytes=pbkdf2bytes.slice(0,32);
+            ivbytes=pbkdf2bytes.slice(32);
+    
+            var key=await window.crypto.subtle.importKey('raw', keybytes, {name: 'AES-CBC', length: 256}, false, ['encrypt']) 
+            .catch(function(err){
+                console.error(err);
+            });
+            console.log('key imported');		
+    
+            var cipherbytes=await window.crypto.subtle.encrypt({name: "AES-CBC", iv: ivbytes}, key, plaintextbytes)
+            .catch(function(err){
+                console.error(err);
+            });
+    
+            if(!cipherbytes) {
+                 spnEncstatus.classList.add("redspan");
+                spnEncstatus.innerHTML='<p>Error encrypting file.  See console log.</p>';
+                return;
+            }
+    
+            console.log('plaintext encrypted');
+            cipherbytes=new Uint8Array(cipherbytes);
+    
+            var resultbytes=new Uint8Array(cipherbytes.length+16)
+            resultbytes.set(new TextEncoder("utf-8").encode('Salted__'));
+            resultbytes.set(pbkdf2salt, 8);
+            resultbytes.set(cipherbytes, 16);
+    
+            var blob=new Blob([resultbytes], {type: 'application/download'});
+            var blobUrl=URL.createObjectURL(blob);
+            aEncsavefile.href=blobUrl;
+            aEncsavefile.download=objFile.name + '.txt';
+    
+             spnEncstatus.classList.add("greenspan");
+            spnEncstatus.innerHTML='<p>File encrypted.</p>';
+            aEncsavefile.hidden=false;
+        }
+    
+        async function decryptfile() {
+            btnDecrypt.disabled=true;
+    
+            var cipherbytes=await readfile(objFile)
+            .catch(function(err){
+                console.error(err);
+            });	
+            var cipherbytes=new Uint8Array(cipherbytes);
+    
+            var pbkdf2iterations=10000;
+            var passphrasebytes=new TextEncoder("utf-8").encode(txtDecpassphrase.value);
+            var pbkdf2salt=cipherbytes.slice(8,16);
+    
+    
+            var passphrasekey=await window.crypto.subtle.importKey('raw', passphrasebytes, {name: 'PBKDF2'}, false, ['deriveBits'])
+            .catch(function(err){
+                console.error(err);
+    
+            });
+            console.log('passphrasekey imported');
+    
+            var pbkdf2bytes=await window.crypto.subtle.deriveBits({"name": 'PBKDF2', "salt": pbkdf2salt, "iterations": pbkdf2iterations, "hash": 'SHA-256'}, passphrasekey, 384)		
+            .catch(function(err){
+                console.error(err);
+            });
+            console.log('pbkdf2bytes derived');
+            pbkdf2bytes=new Uint8Array(pbkdf2bytes);
+    
+            keybytes=pbkdf2bytes.slice(0,32);
+            ivbytes=pbkdf2bytes.slice(32);
+            cipherbytes=cipherbytes.slice(16);
+    
+            var key=await window.crypto.subtle.importKey('raw', keybytes, {name: 'AES-CBC', length: 256}, false, ['decrypt']) 
+            .catch(function(err){
+                console.error(err);
+            });
+            console.log('key imported');		
+    
+            var plaintextbytes=await window.crypto.subtle.decrypt({name: "AES-CBC", iv: ivbytes}, key, cipherbytes)
+            .catch(function(err){
+                console.error(err);
+            });
+    
+            if(!plaintextbytes) {
+                 spnDecstatus.classList.add("redspan");
+                spnDecstatus.innerHTML='<p>Error decrypting file.  Password may be incorrect.</p>';
+                return;
+            }
+    
+            console.log('ciphertext decrypted');
+            plaintextbytes=new Uint8Array(plaintextbytes);
+    
+            var blob=new Blob([plaintextbytes], {type: 'application/download'});
+            var blobUrl=URL.createObjectURL(blob);
+            aDecsavefile.href=blobUrl;
+            aDecsavefile.download=objFile.name.replace(".txt", "");
+    
+             spnDecstatus.classList.add("greenspan");
+            spnDecstatus.innerHTML='<p>File decrypted.</p>';
+            aDecsavefile.hidden=false;
+        }
+    
+    </script>
+</body>
+
+</html>
